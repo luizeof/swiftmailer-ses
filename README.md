@@ -1,2 +1,2 @@
 # swiftmailer-ses
-swiftmailer-ses
+Swiftmailer SES
