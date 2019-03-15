@@ -8,6 +8,8 @@ RUN mkdir -p /var/www/html
 
 WORKDIR /var/www/html
 
+VOLUME /var/www/html
+
 COPY . /var/www/html
 
 RUN apt-get update
