@@ -1,8 +1,8 @@
 FROM php:7.2-cli
 
-ENV AWS_ACCESSKEY
+ENV AWS_ACCESSKEY="1"
 
-ENV AWS_SECRETKEY
+ENV AWS_SECRETKEY="1"
 
 RUN mkdir -p /var/www/html
 
