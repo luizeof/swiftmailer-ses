@@ -16,7 +16,7 @@ COPY . /var/www/html
 
 RUN apt-get update
 
-RUN apt-get -y install curl gnupg
+RUN apt-get -y install curl gnupg git
 
 RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
 
