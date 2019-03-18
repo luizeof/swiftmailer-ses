@@ -26,8 +26,8 @@ RUN apt-get -y install nodejs
 RUN mkdir -p $COMPOSER_HOME \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-RUN npm install
+RUN cd /var/www/html && npm install
 
-RUN composer install
+RUN /var/www/html && composer install
 
 CMD ["node", "index.js"]
