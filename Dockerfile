@@ -12,7 +12,7 @@ WORKDIR /var/www/html
 
 VOLUME /var/www/html
 
-COPY . /var/www/html
+COPY . /var/www/html/
 
 RUN apt-get update
 
@@ -23,5 +23,7 @@ RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
 RUN apt-get -y install nodejs
 
 COPY docker-entrypoint.sh /
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["node", "index.js"]
