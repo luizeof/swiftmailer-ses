@@ -1,5 +1,7 @@
 FROM php:7.2-cli
 
+RUN docker-php-ext-install mcrypt zip bcmath pdo_mysql mysql mysqli mbstring opcache soap
+
 ENV AWS_ACCESSKEY="1"
 
 ENV AWS_SECRETKEY="1"
