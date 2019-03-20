@@ -6,6 +6,6 @@ set -e
 mkdir -p $COMPOSER_HOME \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-cd /var/www/html && npm install
+cd /var/www/app && npm install
 
-cd /var/www/html && composer install
+cd /var/www/app && composer install

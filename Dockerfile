@@ -12,13 +12,13 @@ ENV AWS_SECRETKEY="1"
 
 ENV COMPOSER_HOME=/root/.composer
 
-RUN mkdir -p /var/www/html/app/spool/default
+RUN mkdir -p /var/www/app
 
-WORKDIR /var/www/html
+WORKDIR /var/www/app
 
-VOLUME /var/www/html/app/spool/default
+VOLUME /var/www/html
 
-COPY . /var/www/html/
+COPY . /var/www/app
 
 RUN apt-get update
 
