@@ -2,7 +2,7 @@ FROM php:7.2-cli
 
 RUN apt-get update
 
-RUN apt-get install zip unzip
+RUN apt-get install -y zip unzip zlib1g-dev
 
 RUN docker-php-ext-install zip bcmath
 
