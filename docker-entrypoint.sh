@@ -9,3 +9,5 @@ mkdir -p $COMPOSER_HOME \
 cd /var/www/app && npm install
 
 cd /var/www/app && composer install
+
+apache2-foreground
