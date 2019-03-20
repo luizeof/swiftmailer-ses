@@ -1,6 +1,10 @@
 FROM php:7.2-cli
 
-RUN docker-php-ext-install bcmath
+RUN apt-get update
+
+RUN apt-get intall zip unzip
+
+RUN docker-php-ext-install zip bcmath
 
 ENV AWS_ACCESSKEY="1"
 
