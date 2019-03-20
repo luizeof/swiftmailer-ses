@@ -24,6 +24,8 @@ RUN apt-get -y install nodejs
 
 COPY docker-entrypoint.sh /
 
+RUN ["chmod", "+x", "/docker-entrypoint.sh"]
+
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["node", "index.js"]
