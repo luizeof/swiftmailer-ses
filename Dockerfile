@@ -22,12 +22,6 @@ RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
 
 RUN apt-get -y install nodejs
 
-# Create Composer directory (cache and auth files) & Get Composer
-RUN mkdir -p $COMPOSER_HOME \
-    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-RUN cd /var/www/html && npm install
-
-RUN /var/www/html && composer install
+COPY docker-entrypoint.sh /
 
 CMD ["node", "index.js"]
