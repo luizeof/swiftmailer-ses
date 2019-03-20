@@ -12,11 +12,11 @@ ENV AWS_SECRETKEY="1"
 
 ENV COMPOSER_HOME=/root/.composer
 
-RUN mkdir -p /var/www/html
+RUN mkdir -p /var/www/html/app/spool/default
 
 WORKDIR /var/www/html
 
-VOLUME /var/www/html/app/spool
+VOLUME /var/www/html/app/spool/default
 
 COPY . /var/www/html/
 
