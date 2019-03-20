@@ -16,7 +16,7 @@ RUN mkdir -p /var/www/html
 
 WORKDIR /var/www/html
 
-VOLUME /var/www/html
+VOLUME /var/www/html/app/spool
 
 COPY . /var/www/html/
 

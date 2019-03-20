@@ -47,9 +47,9 @@ const watcher = chokidar
     })
     .on('add', path => q.push(path))
 
-var stop = function () { 
+var stop = function () {
     console.log('draining. wait for 10s')
-    watcher.close()    
+    watcher.close()
     setTimeout(() => {
         console.log('done')
     }, 10000);
