@@ -1,13 +1,13 @@
 SHELL=/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 -f > /var/log/cron.pipe 2>&1
-* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 -f > /var/log/cron.pipe 2>&1
-* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 -f > /var/log/cron.pipe 2>&1
-* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 -f > /var/log/cron.pipe 2>&1
-* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 -f > /var/log/cron.pipe 2>&1
-* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 -f > /var/log/cron.pipe 2>&1
-* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 -f > /var/log/cron.pipe 2>&1
-* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 -f > /var/log/cron.pipe 2>&1
-* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 -f > /var/log/cron.pipe 2>&1
-* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 -f > /var/log/cron.pipe 2>&1
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 > /var/log/cron.pipe 2>&1
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 > /var/log/cron.pipe 2>&1
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 > /var/log/cron.pipe 2>&1
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 > /var/log/cron.pipe 2>&1
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 > /var/log/cron.pipe 2>&1
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 > /var/log/cron.pipe 2>&1
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 > /var/log/cron.pipe 2>&1
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 > /var/log/cron.pipe 2>&1
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 > /var/log/cron.pipe 2>&1
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send --message-limit=100 > /var/log/cron.pipe 2>&1
