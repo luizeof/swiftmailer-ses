@@ -1,5 +1,7 @@
 FROM mautic/mautic:latest
 
+RUN apt-get update ; apt-get install -u htop
+
 COPY sescron /etc/cron.d/
 
 RUN chmod +x /etc/cron.d/sescron
