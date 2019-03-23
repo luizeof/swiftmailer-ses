@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo -u www-data php /var/www/html/app/console m:e:s -f --message-limit=1000 &
