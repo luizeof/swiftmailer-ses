@@ -1,13 +1,6 @@
 SHELL=/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-* * * * *     www-data   mautic-emails-send
-* * * * *     www-data   mautic-emails-send
-* * * * *     www-data   mautic-emails-send
-* * * * *     www-data   mautic-emails-send
-* * * * *     www-data   mautic-emails-send
-* * * * *     www-data   mautic-emails-send
-* * * * *     www-data   mautic-emails-send
-* * * * *     www-data   mautic-emails-send
-
-  
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send
+* * * * *     www-data   php /var/www/html/app/console swiftmailer:spool:send
